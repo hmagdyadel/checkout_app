@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../generated/assets.dart';
+import '../payments_details.dart';
 import 'custom_button.dart';
 import 'order_info_item.dart';
 import 'total_price.dart';
@@ -26,7 +27,16 @@ class MyCartViewBody extends StatelessWidget {
           Divider(thickness: 2, height: 34),
           TotalPrice(title: "Total", value: r"$50.22"),
           SizedBox(height: 16),
-          CustomButton(),
+          CustomButton(
+            title: "Complete Order",
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const PaymentsDetails(),
+                ),
+              );
+            },
+          ),
           SizedBox(height: 30),
         ],
       ),

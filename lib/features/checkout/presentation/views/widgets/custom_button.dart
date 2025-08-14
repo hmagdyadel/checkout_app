@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key, this.onTap});
+  const CustomButton({super.key, this.onTap, required this.title});
 
   final void Function()? onTap;
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +17,11 @@ class CustomButton extends StatelessWidget {
         height: 55,
         decoration: ShapeDecoration(
           color: const Color(0xFF34A853),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15),
+          ),
         ),
-        child: const Center(child: Text("Complete Order", style: Styles.textStyle22)),
+        child: Center(child: Text(title, style: Styles.textStyle22)),
       ),
     );
   }

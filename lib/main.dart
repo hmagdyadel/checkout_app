@@ -14,7 +14,7 @@ class CheckoutApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Checkout App',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
       home: const MyCartView(),
     );
   }
