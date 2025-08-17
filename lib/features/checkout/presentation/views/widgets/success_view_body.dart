@@ -21,7 +21,7 @@ class SuccessViewBody extends StatelessWidget {
           Container(
             width: double.infinity,
             decoration: ShapeDecoration(
-              color: Color(0xFFD9D9D9),
+              color: Color(0xFFEDEDED),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
               ),

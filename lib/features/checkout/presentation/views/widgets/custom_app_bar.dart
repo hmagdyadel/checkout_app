@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles.dart';
 AppBar buildAppBar(BuildContext context, {required String title}) {
   return AppBar(
-    title: const Text('My Cart', style: Styles.textStyle25),
+    title:  Text(title, style: Styles.textStyle25),
     centerTitle: true,
     backgroundColor: Colors.transparent,
     elevation: 0,
